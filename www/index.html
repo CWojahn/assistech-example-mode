@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css">
+  <script src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <title>AssisTech</title>
+</head>
+<body>
+  <div id="nav">
+    <nav>
+      <div class="nav-wrapper red darken-1">
+        <a href="#!" class="brand-logo">
+            <i class="material-icons">pin_drop</i><span>AssisTech</span>
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#!">Início</a></li>
+          <li><a href="newassist.html">Nova Assistência</a></li>
+          <li><a href="localizar.html">Localizar Técnicos</a></li>
+          <li><a href="config.html">Configurações</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#!">Início</a></li>
+        <li><a href="newassist.html">Nova Assistência</a></li>
+        <li><a href="localizar.html">Localizar Técnicos</a></li>
+        <li><a href="config.html">Configurações</a></li>
+    </ul>
+      <script type="text/javascript">
+        var elem = document.querySelector('.sidenav');
+        var instance = new M.Sidenav(elem);    
+      </script>
+  </div>
+      <div class="row" >
+        <div class="col s4 m4 l4"></div>
+        <div class="col s4 m4 l4">
+          
+        </div>
+        <div class="col s4 m4 l4">
+            <canvas id="assist-total" height="100"></canvas>
+        </div>
+      </div>
+    <script src="../www/src/js/index.js"></script>
+</body>
+</html>
