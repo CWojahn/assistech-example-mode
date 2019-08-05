@@ -1,3 +1,6 @@
+var elem = document.querySelector('.sidenav');
+var instance = new M.Sidenav(elem);
+
 new Chart(document.getElementById("assist-total"), {
   type: 'doughnut',
   title: "sei la",
